@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<p>Se han encontrado {{largo}} dispositivos en la base:</p>
+
+<table style="width:100%" border="2px">
+    <tr>
+        <th>NOMBRE</th>
+        <th>MAC</th>
+    </tr>
+    <!--Jinja Loops-->
+{% for x in dps %} 
+    <tr>
+        <td >
+            {{ x.nombre }}
+        </td>
+        <td >
+            {{ x.MAC }}
+        </td>
+    </tr>
+{% endfor %}
+</table>
